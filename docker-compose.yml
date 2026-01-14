@@ -2,6 +2,8 @@ services:
   api-trenes:
     build: .
     network_mode: host
+    ports:
+      - "3056:3056"
     restart: unless-stopped
     environment:
       - NODE_ENV=production
