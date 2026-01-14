@@ -1,0 +1,7 @@
+services:
+  api-trenes:
+    build: .
+    network_mode: host
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
